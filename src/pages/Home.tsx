@@ -203,32 +203,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 px-4">
-        <div className="container mx-auto text-center">
-          <Card className="bg-gradient-hero p-8 border-none max-w-4xl mx-auto">
-            <CardContent className="space-y-6">
-              <h2 className="text-3xl font-bold text-white">
-                Pronto para Transformar sua Carreira?
-              </h2>
-              <p className="text-white/80 text-lg max-w-2xl mx-auto">
-                Junte-se a milhares de profissionais que já transformaram suas carreiras 
-                com nossos cursos de Inteligência Artificial.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link to="/cursos">
-                  <Button size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90 px-8">
-                    Começar Agora
-                  </Button>
-                </Link>
-                <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 px-8">
-                  Falar com Consultor
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
     </Layout>
   );
 };
