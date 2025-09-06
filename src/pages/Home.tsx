@@ -74,12 +74,11 @@ const Home = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative py-20 px-4 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-hero opacity-10" />
-        <div className="container mx-auto text-center relative z-10">
+      <section className="relative py-20 px-4">
+        <div className="container mx-auto text-center">
           <div className="max-w-4xl mx-auto space-y-8">
             <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-              <span className="bg-gradient-primary bg-clip-text text-transparent">
+              <span className="text-primary">
                 Capacita IA
               </span>
               <br />
@@ -88,19 +87,19 @@ const Home = () => {
               </span>
             </h1>
             
-            <p className="text-xl text-foreground/70 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
               Transforme sua carreira com os melhores cursos de Inteligência Artificial. 
               Aprenda com especialistas e desenvolva as habilidades mais procuradas do mercado.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Link to="/cursos">
-                <Button size="lg" className="bg-gradient-primary hover:shadow-glow transition-all duration-300 text-lg px-8">
+                <Button size="lg" className="text-lg px-8">
                   Explorar Cursos
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
-              <Button variant="outline" size="lg" className="text-lg px-8 border-primary/30 hover:bg-primary/5">
+              <Button variant="outline" size="lg" className="text-lg px-8">
                 Saiba Mais
               </Button>
             </div>
@@ -109,11 +108,11 @@ const Home = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-16 px-4 bg-secondary/20">
+      <section className="py-16 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Por que escolher o Capacita IA?</h2>
-            <p className="text-foreground/70 max-w-2xl mx-auto">
+            <p className="text-muted-foreground max-w-2xl mx-auto">
               Nossa plataforma oferece a melhor experiência de aprendizado em IA, 
               com metodologias inovadoras e conteúdo sempre atualizado.
             </p>
@@ -121,13 +120,13 @@ const Home = () => {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {features.map((feature, index) => (
-              <Card key={index} className="bg-gradient-card border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-accent group">
+              <Card key={index} className="border-border hover:shadow-accent transition-all duration-300 group">
                 <CardContent className="p-6 text-center space-y-4">
-                  <div className="mx-auto w-16 h-16 bg-gradient-primary rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <feature.icon className="h-8 w-8 text-white" />
+                  <div className="mx-auto w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300">
+                    <feature.icon className="h-8 w-8 text-primary" />
                   </div>
                   <h3 className="text-lg font-semibold">{feature.title}</h3>
-                  <p className="text-sm text-foreground/70">{feature.description}</p>
+                  <p className="text-sm text-muted-foreground">{feature.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -153,7 +152,7 @@ const Home = () => {
           
           <div className="text-center">
             <Link to="/cursos">
-              <Button size="lg" variant="outline" className="border-primary/30 hover:bg-primary/5">
+              <Button size="lg" variant="outline">
                 Ver Todos os Cursos
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
@@ -163,29 +162,29 @@ const Home = () => {
       </section>
 
       {/* About Section */}
-      <section className="py-16 px-4 bg-secondary/20">
+      <section className="py-16 px-4 bg-muted/30">
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <h2 className="text-3xl font-bold">Sobre o Programa Capacita IA</h2>
-              <p className="text-foreground/70 leading-relaxed">
+              <p className="text-muted-foreground leading-relaxed">
                 O Capacita IA é um programa inovador de educação em Inteligência Artificial, 
                 desenvolvido para democratizar o acesso ao conhecimento em IA e formar os 
                 profissionais do futuro.
               </p>
-              <p className="text-foreground/70 leading-relaxed">
+              <p className="text-muted-foreground leading-relaxed">
                 Nossa missão é transformar vidas através da educação de qualidade, oferecendo 
                 cursos práticos e atualizados com as últimas tendências tecnológicas do mercado.
               </p>
               
               <div className="grid grid-cols-2 gap-4">
-                <div className="text-center p-4 bg-gradient-card rounded-lg">
+                <div className="text-center p-4 bg-card border rounded-lg">
                   <div className="text-2xl font-bold text-primary">10k+</div>
-                  <div className="text-sm text-foreground/70">Alunos Formados</div>
+                  <div className="text-sm text-muted-foreground">Alunos Formados</div>
                 </div>
-                <div className="text-center p-4 bg-gradient-card rounded-lg">
-                  <div className="text-2xl font-bold text-accent">50+</div>
-                  <div className="text-sm text-foreground/70">Cursos Disponíveis</div>
+                <div className="text-center p-4 bg-card border rounded-lg">
+                  <div className="text-2xl font-bold text-primary">50+</div>
+                  <div className="text-sm text-muted-foreground">Cursos Disponíveis</div>
                 </div>
               </div>
             </div>
@@ -194,8 +193,8 @@ const Home = () => {
               <h3 className="text-xl font-semibold mb-4">Benefícios Exclusivos</h3>
               {benefits.map((benefit, index) => (
                 <div key={index} className="flex items-center space-x-3">
-                  <CheckCircle className="h-5 w-5 text-accent flex-shrink-0" />
-                  <span className="text-foreground/70">{benefit}</span>
+                  <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
+                  <span className="text-muted-foreground">{benefit}</span>
                 </div>
               ))}
             </div>
