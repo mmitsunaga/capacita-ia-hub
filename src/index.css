@@ -21,8 +21,8 @@ All colors MUST be HSL.
     --primary-foreground: 210 20% 98%;
     --primary-glow: 269 90% 72%;
     
-    --secondary: 315 100% 92%;
-    --secondary-foreground: 315 85% 15%;
+    --secondary: 120 60% 85%;
+    --secondary-foreground: 120 40% 20%;
 
     --muted: 220 14.3% 95.9%;
     --muted-foreground: 220 8.9% 46.1%;
@@ -42,10 +42,10 @@ All colors MUST be HSL.
 
     /* Modern Vibrant Design System */
     --gradient-primary: linear-gradient(135deg, hsl(262 83% 58%) 0%, hsl(269 90% 72%) 100%);
-    --gradient-secondary: linear-gradient(135deg, hsl(315 100% 92%) 0%, hsl(315 85% 85%) 100%);
+    --gradient-secondary: linear-gradient(135deg, hsl(120 60% 85%) 0%, hsl(120 50% 75%) 100%);
     --gradient-accent: linear-gradient(135deg, hsl(142 76% 36%) 0%, hsl(142 86% 45%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(262 83% 58% / 0.1) 0%, hsl(315 100% 92% / 0.3) 50%, hsl(142 76% 36% / 0.1) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(315 100% 98%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(262 83% 58% / 0.1) 0%, hsl(120 60% 85% / 0.3) 50%, hsl(142 76% 36% / 0.1) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(120 60% 95%) 100%);
     
     --shadow-glow: 0 8px 32px hsl(262 83% 58% / 0.2);
     --shadow-accent: 0 4px 20px hsl(142 76% 36% / 0.15);
